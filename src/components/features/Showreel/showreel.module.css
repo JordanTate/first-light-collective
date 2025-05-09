@@ -1,0 +1,15 @@
+.showreel {
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 500px) {
+  @media (min-width: 800px) {
+    .showreel {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 4rem 2rem;
+      padding: 4rem 1rem;
+    }
+  }
+}

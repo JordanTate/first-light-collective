@@ -1,0 +1,74 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 6rem;
+  padding: 8rem 1rem;
+}
+
+.tagline {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legal {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.legal p {
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.github {
+  display: inline-block;
+}
+
+.github:hover {
+  animation: jump 4s infinite;
+}
+
+.footer a:hover {
+  color: var(--secondary);
+}
+
+@media (min-width: 800px) {
+  .footer {
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tagline {
+    font-size: 4rem;
+  }
+
+  .socials {
+    justify-content: end;
+  }
+
+  .legal {
+    text-align: end;
+  }
+}
+
+@keyframes jump {
+  0%, 10%, 18%, 100% {
+    transform: translateY(0px);
+  }
+
+  5% {
+    transform: translateY(-8px);
+  }
+
+  15% {
+    transform: translateY(-4px);
+  }
+}
