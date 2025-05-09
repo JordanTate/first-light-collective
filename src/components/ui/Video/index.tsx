@@ -7,7 +7,7 @@ import { handleMouseMove } from './lib/events';
 import styles from './video.module.css';
 
 export default function Video(props: VideoProps) {
-  const { children, embedUrl, title, link } = props;
+  const { children, embedUrl, title } = props;
   const [hasWindow, setHasWindow] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const figureRef = useRef<HTMLDivElement>(null);
