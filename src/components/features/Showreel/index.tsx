@@ -26,7 +26,7 @@ export default function Showreel() {
   function onReadyHandler() {
     setAmountReady((prev) => {
       const next = prev + 1;
-      if (next === TOTAL) {
+      if (next === TOTAL || amountReady === TOTAL) {
         setTimeout(() => hideLoader(), 400);
       }
       return next;
