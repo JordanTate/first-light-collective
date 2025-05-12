@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from 'next';
+import './globals.css';
+import { LoaderProvider } from '@/context/loader-context';
 
 export const metadata: Metadata = {
-  title: "FIRST LIGHT COLLECTIVE",
-  description: "",
+  title: 'FIRST LIGHT COLLECTIVE',
+  description: '',
 };
 
 export default function RootLayout({
@@ -12,9 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
-        {children}
+        <LoaderProvider>{children}</LoaderProvider>
       </body>
     </html>
   );
