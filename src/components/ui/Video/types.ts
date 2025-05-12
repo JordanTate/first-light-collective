@@ -5,6 +5,7 @@ export type VideoProps = {
   embedUrl: string;
   title: string;
   link?: string;
+  onReadyHandler: () => void;
 }
 
 export type MouseMoveEventProps = {

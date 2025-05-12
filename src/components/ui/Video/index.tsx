@@ -7,7 +7,7 @@ import { handleMouseMove } from './lib/events';
 import styles from './video.module.css';
 
 export default function Video(props: VideoProps) {
-  const { children, embedUrl, title } = props;
+  const { children, embedUrl, title, onReadyHandler } = props;
   const [hasWindow, setHasWindow] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const figureRef = useRef<HTMLDivElement>(null);
@@ -27,6 +27,7 @@ export default function Video(props: VideoProps) {
       onMouseMove={(event) =>
         handleMouseMove({ event, parentRef: figureRef, childRef: captionRef })
       }
+      onClick={() => window.open(embedUrl, '_blank')}
     >
       <div className={styles.playerWrapper}>
         {hasWindow && <ReactPlayer
@@ -38,6 +39,7 @@ export default function Video(props: VideoProps) {
           loop={true}
           controls={false}
           muted={true}
+          onReady={onReadyHandler}
         />}
       </div>
       <figcaption className={styles.caption}>
