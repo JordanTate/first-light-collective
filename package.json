@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@masonry-grid/react": "^1.1.1",
     "@phosphor-icons/react": "^2.1.7",
     "@tailwindcss/postcss": "^4.3.0",
     "framer-motion": "^12.11.0",
@@ -18,6 +19,7 @@
     "react-dom": "^19.0.0",
     "react-fast-marquee": "^1.6.5",
     "react-player": "^2.16.0",
+    "react-social-media-embed": "^2.5.18",
     "sass": "^1.100.0",
     "tailwindcss": "^4.3.0"
   },

@@ -1,7 +1,8 @@
 export type GalleryImage = {
   src: string;
   alt: string;
-  // info: GalleryImageInfo;
+  width: number;
+  height: number;
 };
 
 export type GalleryImageInfo = {
