@@ -33,7 +33,7 @@ export default function Home() {
             <h2 className='text-4xl uppercase font-bold'>Social</h2>
           </div>
         </hgroup>
-        <div className='grid grid-cols-2 grid-flow-row gap-4'>
+        <div className='grid grid-cols-2 grid-flow-row gap-4 py-16'>
           <TikTokVideo url='https://www.tiktok.com/@angelnvmber/video/7629799113407630614' />
           <TikTokVideo url='https://www.tiktok.com/@angelnvmber/video/7510166998425275670' />
         </div>
