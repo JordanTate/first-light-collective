@@ -9,13 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@masonry-grid/react": "^1.1.1",
     "@phosphor-icons/react": "^2.1.7",
+    "@tailwindcss/postcss": "^4.3.0",
     "framer-motion": "^12.11.0",
-    "next": "15.3.2",
+    "next": "^15.5.19",
+    "postcss": "^8.5.15",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-fast-marquee": "^1.6.5",
-    "react-player": "^2.16.0"
+    "react-player": "^2.16.0",
+    "react-social-media-embed": "^2.5.18",
+    "sass": "^1.100.0",
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

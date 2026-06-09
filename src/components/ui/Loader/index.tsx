@@ -27,7 +27,6 @@ export default function Loader({ isVisible }: { isVisible: boolean }) {
               repeatType: 'reverse',
             }}
           ></motion.img>
-          <p className={styles.text}>First Light Collective</p>
         </motion.div>
       )}
     </AnimatePresence>
