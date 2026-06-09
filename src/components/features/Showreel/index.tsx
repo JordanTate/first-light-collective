@@ -33,107 +33,118 @@ export default function Showreel() {
   }
 
   return (
-    <div className={styles.showreel}>
-      <Video
-        title={'The Fabric Speaks'}
-        embedUrl={urls[0]}
-        onReadyHandler={onReadyHandler}
-      >
-        <p>
-          Art Direction by Petr Vybiral
-          <br />
-          Storyboard by Petr Vybiral
-          <br />
-          Directed by Alex Chan, Petr Vybiral, George Barnes, Theodore Swaddling
-          <br />
-          Edited by Alex Chan
-          <br />
-          VFX by George Barnes & Theodore Swaddling
-          <br />
-          DOP Alister Malcolm
-          <br />
-          Coloured by Theodore Swaddling
-        </p>
-      </Video>
-      <Video
-        title={'Omen Of The Night'}
-        embedUrl={urls[1]}
-        onReadyHandler={onReadyHandler}
-      >
-        <p>
-          Art Direction by Petr Vybiral
-          <br />
-          Storyboard by Petr Vybiral
-          <br />
-          Directed by Alex Chan, Petr Vybiral, George Barnes, Theodore Swaddling
-          <br />
-          DOP by Sam Kay & Alex Chan
-          <br />
-          Additional Photography by Feisal El-Khazragi
-          <br />
-          Edit by Alex Chan & George Barnes
-          <br />
-          Colour by Theodore Swaddling
-          <br />
-          VFX by George Barnes
-        </p>
-      </Video>
-      <Video
-        title={'A Worthy Host'}
-        embedUrl={urls[2]}
-        onReadyHandler={onReadyHandler}
-      >
-        <p>
-          Art Direction by Petr Vybiral
-          <br />
-          Storyboard by Petr Vybiral
-          <br />
-          Directed by Alex Chan, Petr Vybiral, George Barnes, Theodore Swaddling
-          <br />
-          Edited by Alex Chan
-          <br />
-          VFX by George Barnes
-          <br />
-          DOP Liam Rees
-          <br />
-          Coloured by Theodore Swaddling
-        </p>
-      </Video>
-      <Video
-        title={'High On You'}
-        embedUrl={urls[3]}
-        onReadyHandler={onReadyHandler}
-      >
-        <p>
-          Art Direction by Petr Vybiral
-          <br />
-          Storyboard by Petr Vybiral
-          <br />
-          Directed by Alex Chan, Petr Vybiral, George Barnes, Theodore Swaddling
-          <br />
-          DOP by Sam Kay
-          <br />
-          Additional Photography by Shona Leen & Alex Chan
-          <br />
-          Edit, Colour & VFX by Cult of Heaven
-        </p>
-      </Video>
-      <Video
-        title={'Anxiously Walking On Water'}
-        embedUrl={urls[4]}
-        onReadyHandler={onReadyHandler}
-      >
-        <p>
-          Art Direction by Petr Vybiral
-          <br />
-          Storyboard by Petr Vybiral Directed by Petr Vybiral, Alex Chan and
-          George Barnes
-          <br />
-          DOP by Alex Chan
-          <br />
-          Edit, Colour & VFX by George Barnes
-        </p>
-      </Video>
-    </div>
+    <>
+      <hgroup className='flex justify-center items-center px-8 pt-16 text-center'>
+        <div className='px-4 py-2 bg-black text-white'>
+          <h2 className='text-4xl uppercase font-bold'>Music Video</h2>
+        </div>
+      </hgroup>
+      <div className={styles.showreel}>
+        <Video
+          title={'The Fabric Speaks'}
+          embedUrl={urls[0]}
+          onReadyHandler={onReadyHandler}
+        >
+          <p>
+            Art Direction by Petr Vybiral
+            <br />
+            Storyboard by Petr Vybiral
+            <br />
+            Directed by Alex Chan, Petr Vybiral, George Barnes, Theodore
+            Swaddling
+            <br />
+            Edited by Alex Chan
+            <br />
+            VFX by George Barnes & Theodore Swaddling
+            <br />
+            DOP Alister Malcolm
+            <br />
+            Coloured by Theodore Swaddling
+          </p>
+        </Video>
+        <Video
+          title={'Omen Of The Night'}
+          embedUrl={urls[1]}
+          onReadyHandler={onReadyHandler}
+        >
+          <p>
+            Art Direction by Petr Vybiral
+            <br />
+            Storyboard by Petr Vybiral
+            <br />
+            Directed by Alex Chan, Petr Vybiral, George Barnes, Theodore
+            Swaddling
+            <br />
+            DOP by Sam Kay & Alex Chan
+            <br />
+            Additional Photography by Feisal El-Khazragi
+            <br />
+            Edit by Alex Chan & George Barnes
+            <br />
+            Colour by Theodore Swaddling
+            <br />
+            VFX by George Barnes
+          </p>
+        </Video>
+        <Video
+          title={'A Worthy Host'}
+          embedUrl={urls[2]}
+          onReadyHandler={onReadyHandler}
+        >
+          <p>
+            Art Direction by Petr Vybiral
+            <br />
+            Storyboard by Petr Vybiral
+            <br />
+            Directed by Alex Chan, Petr Vybiral, George Barnes, Theodore
+            Swaddling
+            <br />
+            Edited by Alex Chan
+            <br />
+            VFX by George Barnes
+            <br />
+            DOP Liam Rees
+            <br />
+            Coloured by Theodore Swaddling
+          </p>
+        </Video>
+        <Video
+          title={'High On You'}
+          embedUrl={urls[3]}
+          onReadyHandler={onReadyHandler}
+        >
+          <p>
+            Art Direction by Petr Vybiral
+            <br />
+            Storyboard by Petr Vybiral
+            <br />
+            Directed by Alex Chan, Petr Vybiral, George Barnes, Theodore
+            Swaddling
+            <br />
+            DOP by Sam Kay
+            <br />
+            Additional Photography by Shona Leen & Alex Chan
+            <br />
+            Edit, Colour & VFX by Cult of Heaven
+          </p>
+        </Video>
+        <Video
+          title={'Anxiously Walking On Water'}
+          embedUrl={urls[4]}
+          onReadyHandler={onReadyHandler}
+        >
+          <p>
+            Art Direction by Petr Vybiral
+            <br />
+            Storyboard by Petr Vybiral Directed by Petr Vybiral, Alex Chan and
+            George Barnes
+            <br />
+            DOP by Alex Chan
+            <br />
+            Edit, Colour & VFX by George Barnes
+          </p>
+        </Video>
+      </div>
+    </>
   );
 }
