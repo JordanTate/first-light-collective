@@ -11,12 +11,11 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.left}>
         <p className={styles.tagline}>
-          First Light Collective are Alex Chan, George Barnes, Petr Vybiral and
-          Theodore Swaddling.
+          First Light Collective is Petr Vybiral + Collaborators where credited.
         </p>
       </div>
       <div className={styles.right}>
-        <div className={styles.socials}>
+        {/* <div className={styles.socials}>
           <a href='/' rel='nofollow' target='_blank' title='Instagram'>
             <InstagramLogo size={32} />
           </a>
@@ -26,11 +25,11 @@ export default function Footer() {
           <a href='/' rel='nofollow' target='_blank' title='YouTube'>
             <YoutubeLogo size={32} />
           </a>
-        </div>
+        </div> */}
         <div className={styles.legal}>
           <p>
             <small>
-              First Light Collection &copy; {new Date().getFullYear()}
+              First Light Collective &copy; {new Date().getFullYear()}
             </small>
           </p>
           <a
