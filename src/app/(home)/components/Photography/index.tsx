@@ -3,6 +3,7 @@
 import Container from '@/components/ui/Container';
 import { galleryImages } from './data';
 import { BalancedMasonryGrid as MasonryGrid, Frame } from '@masonry-grid/react';
+import Image from 'next/image';
 
 export default function Photography() {
   return (
@@ -10,7 +11,12 @@ export default function Photography() {
       <MasonryGrid frameWidth={360} gap={16} className='py-16 px-4'>
         {galleryImages.map((image) => (
           <Frame key={image.src} width={image.width} height={image.height}>
-            <img src={image.src} alt={image.alt} />
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={image.width}
+              height={image.height}
+            />
           </Frame>
         ))}
       </MasonryGrid>

@@ -10,8 +10,6 @@ export default function Page() {
     hideLoader();
   }, []);
 
-  const font = 'futura-pt';
-
   return (
     <main className='py-16'>
       <Container>
@@ -27,10 +25,10 @@ export default function Page() {
           attention to nuance.
         </p>
         <p className='text-center uppercase text-3xl px-6 py-2 bg-black mb-6'>
-          I prioritise understanding each client's needs and translating them
-          into considered creative outcomes. The word "Collective" reflects my
-          network of trusted collaborators, brought in on a project-by-project
-          basis where required.
+          I prioritise understanding each client&apos;s needs and translating
+          them into considered creative outcomes. The word
+          &quot;Collective&quot; reflects my network of trusted collaborators,
+          brought in on a project-by-project basis where required.
         </p>
         <p className='text-center uppercase text-3xl px-6 py-2 bg-black mb-6'>
           The work shown here is credited accordingly.

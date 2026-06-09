@@ -1,10 +1,5 @@
 import styles from './footer.module.css';
-import {
-  InstagramLogo,
-  SpotifyLogo,
-  YoutubeLogo,
-  GithubLogo,
-} from '@phosphor-icons/react/dist/ssr';
+import { GithubLogo } from '@phosphor-icons/react/dist/ssr';
 
 export default function Footer() {
   return (
