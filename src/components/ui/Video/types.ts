@@ -1,15 +1,17 @@
-import { RefObject } from "react";
+import { RefObject } from 'react';
 
 export type VideoProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   embedUrl: string;
   title: string;
   link?: string;
-  onReadyHandler: () => void;
-}
+  width?: number | string;
+  height?: number | string;
+  onReadyHandler?: () => void;
+};
 
 export type MouseMoveEventProps = {
   event: React.MouseEvent;
   parentRef: RefObject<HTMLDivElement | null>;
   childRef: RefObject<HTMLDivElement | null>;
-}
+};
