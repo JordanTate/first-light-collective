@@ -49,6 +49,24 @@ const galleryImages: GalleryImage[] = [
     width: 1,
     height: 1,
   },
+  {
+    src: '/AN_NEOSIGIL.jpg',
+    alt: 'NEOSIGIL',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: '/AN_PAYPHONE.jpg',
+    alt: 'PAYPHONE',
+    width: 1,
+    height: 1,
+  },
+  {
+    src: '/RENAISSANCE_OF_YOU_120426.jpg',
+    alt: 'RENAISSANCE OF YOU',
+    width: 1,
+    height: 1,
+  },
 ];
 
 export { galleryImages };
